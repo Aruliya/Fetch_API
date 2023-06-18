@@ -1,0 +1,54 @@
+// Selector
+const fetchButton = document.querySelector(".fetch_button")
+const fetchDiv = document.querySelector(".fetched_api_div")
+const fetchedApi = document.querySelector(".fetched_API")
+
+// Event Listener
+fetchButton.addEventListener("click", fetching);
+// document.addEventListener("DOMContentLoaded", fetch);
+
+// Function
+function fetching() {
+    fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(response => response.json())
+    .then(data => {
+        displayData(data);
+
+        // Removing the button
+        fetchButton.remove();
+    })
+
+    .catch(error => {
+        console.log('Error: ', error);
+    })
+
+}
+
+function displayData(data) {
+    data.forEach(post =>{
+        const title = post.title;
+        const body = post.body;
+        
+        const newItem = document.createElement('li');
+        newItem.classList.add("fetched-item");
+        newItem.innerHTML = `<h3>${title}</h3><p>${body}</p>`;
+
+        fetchDiv.appendChild(fetchedApi);
+        fetchedApi.appendChild(newItem);
+    })
+}
+
+
+    // Creating List Item
+ /*   const newItem = document.createElement("li");
+    newItem.innerText = fetch('https://jsonplaceholder.typicode.com/posts');
+    newItem.classList.add("fetched-item");
+
+    fetchDiv.appendChild(fetchedApi);
+    fetchedApi.appendChild(newItem);
+
+
+
+    
+}*/
+
