@@ -1,5 +1,6 @@
 // Selector
-const fetchButton = document.querySelector(".fetch_button")
+const fetchButton = document.querySelector("button")
+const fetchButtonDiv = document.querySelector(".fetch_button")
 const fetchDiv = document.querySelector(".fetched_api_div")
 const fetchedApi = document.querySelector(".fetched_API")
 
@@ -16,6 +17,7 @@ function fetching() {
 
         // Removing the button
         fetchButton.remove();
+        fetchButtonDiv.remove();
     })
 
     .catch(error => {
