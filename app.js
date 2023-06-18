@@ -5,8 +5,11 @@ const fetchDiv = document.querySelector(".fetched_api_div")
 const fetchedApi = document.querySelector(".fetched_API")
 
 // Event Listener
-fetchButton.addEventListener("click", fetching);
-// document.addEventListener("DOMContentLoaded", fetch);
+document.addEventListener("DOMContentLoaded", () => {
+    fetchButton.addEventListener("click", fetching);
+});
+
+
 
 // Function
 function fetching() {
