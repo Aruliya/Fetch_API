@@ -60,10 +60,12 @@ button:hover{
     gap: 30px 20px;
     margin-top: 30px;
     margin-bottom: 30px;
+    gap: 30px 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
 
 
-    
 }
 
 .fetched-item{
