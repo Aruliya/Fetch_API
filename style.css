@@ -57,8 +57,9 @@ button:hover{
     
     justify-content: space-evenly;
     flex-flow: row wrap;
-    
-    
+    gap: 30px 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
 
 

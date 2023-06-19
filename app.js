@@ -44,16 +44,5 @@ function displayData(data) {
 }
 
 
-    // Creating List Item
- /*   const newItem = document.createElement("li");
-    newItem.innerText = fetch('https://jsonplaceholder.typicode.com/posts');
-    newItem.classList.add("fetched-item");
 
-    fetchDiv.appendChild(fetchedApi);
-    fetchedApi.appendChild(newItem);
-
-
-
-    
-}*/
 
